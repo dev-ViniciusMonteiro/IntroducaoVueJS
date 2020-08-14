@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <br><br><br>
+
+    <div id="app-2">
+        <p>{{ foo }}</p>
+        <!-- não irá atualizar mais o `foo`! -->
+        <button v-on:click="foo = 'alterado'">Altere clicando</button>
+      </div>
+
+      <br><br>
+
+      <div id="app-3">
+        {{ a }}
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
